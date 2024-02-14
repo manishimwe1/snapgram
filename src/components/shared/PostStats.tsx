@@ -72,7 +72,7 @@ const PostStats = ({ post, userId }: Props) => {
 		}
 	};
 	return (
-		<div className='flex justify-between items-center z-20'>
+		<div className='flex justify-between items-center z-20 w-full '>
 			<div className='flex gap-2 mr-5'>
 				<img
 					src={`${

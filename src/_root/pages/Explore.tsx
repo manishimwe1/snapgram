@@ -37,7 +37,7 @@ const Explore = () => {
 			</div>
 		);
 	}
-	console.log(posts);
+	// console.log(posts);
 
 	const shouldShowSearchResults =
 		searchValue !== "" || !isSearchFeching;

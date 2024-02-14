@@ -419,3 +419,48 @@ export async function searchPosts(searchTerm: string) {
 		console.log(error);
 	}
 }
+
+export async function getAllUsers() {
+	try {
+		const AllUsers = await databases.listDocuments(
+			appwriteConfig.databaseId,
+			appwriteConfig.userCollectionId,
+			[
+				Query.orderDesc("$createdAt"),
+				Query.limit(20),
+			],
+		);
+
+		if (!AllUsers) throw Error;
+		return AllUsers;
+	} catch (error) {
+		console.log(error);
+	}
+}
+export async function getAllSavedPosts() {
+	try {
+		const AllSavedPosts = await databases.listDocuments(
+			appwriteConfig.databaseId,
+			appwriteConfig.savesCollectionId,
+			[
+				Query.orderDesc("$createdAt"),
+				Query.limit(20),
+			],
+		);
+
+		if (!AllSavedPosts) throw Error;
+
+		return AllSavedPosts;
+	} catch (error) {
+		console.log(error);
+	}
+}
+
+// TODO:
+// export const getTopCreator = async () => {
+// 	try {
+// 		const TopCreator = await databases.listDocuments;
+// 	} catch (error) {
+// 		console.log(error);
+// 	}
+// };

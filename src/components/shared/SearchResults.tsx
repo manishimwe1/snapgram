@@ -12,7 +12,7 @@ const SearchResults = ({
 	searchedPosts,
 }: searchProps) => {
 	if (isSearchFeching) return <Loader />;
-	console.log(searchedPosts);
+	// console.log(searchedPosts);
 
 	if (
 		searchedPosts &&
