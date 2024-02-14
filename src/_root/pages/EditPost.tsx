@@ -15,7 +15,7 @@ const EditPost = () => {
 			<div className='common-container'>
 				<div className='max-w-5xl flex-start gap-3 justify-start'>
 					<img
-						src='/public/assets/icons/add-post.svg'
+						src='/assets/icons/add-post.svg'
 						alt='add'
 						width={36}
 						height={36}

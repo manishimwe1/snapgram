@@ -18,7 +18,7 @@ const PostCard = ({ post }: { post: Models.Document }) => {
 						<img
 							src={
 								post?.creator?.imageUrl ||
-								"/public/assets/icons/profile-placeholder.svg"
+								"/assets/icons/profile-placeholder.svg"
 							}
 							alt='creator'
 							className='rounded-full w-12 lg:h-12'
@@ -48,7 +48,7 @@ const PostCard = ({ post }: { post: Models.Document }) => {
 						"hidden"
 					}`}>
 					<img
-						src='/public/assets/icons/edit.svg'
+						src='/assets/icons/edit.svg'
 						alt='edit'
 						className='h-[20px] w-[20px'
 					/>
@@ -71,7 +71,7 @@ const PostCard = ({ post }: { post: Models.Document }) => {
 				<img
 					src={
 						post.imageUrl ||
-						"/public/assets/icons/profile-placeholder.svg"
+						"/assets/icons/profile-placeholder.svg"
 					}
 					alt='post Image'
 					className='post-card_img'

@@ -34,7 +34,7 @@ const PostDetails = () => {
 									src={
 										post?.creator
 											?.imageUrl ||
-										"/public/assets/icons/profile-placeholder.svg"
+										"/assets/icons/profile-placeholder.svg"
 									}
 									alt='creator'
 									className='rounded-full w-8 h-8 lg:w-12 lg:h-12'
@@ -69,7 +69,7 @@ const PostDetails = () => {
 									}`}
 									to={`/update-post/${post?.$id}`}>
 									<img
-										src='/public/assets/icons/edit.svg'
+										src='/assets/icons/edit.svg'
 										alt=''
 										className='h-[20px] lg:w-[40px] w-[20px] lg:h-[40px]'
 									/>
@@ -84,7 +84,7 @@ const PostDetails = () => {
 										"hidden"
 									}`}>
 									<img
-										src='/public/assets/icons/delete.svg'
+										src='/assets/icons/delete.svg'
 										alt='delete'
 										className='h-[20px] lg:w-[40px] w-[20px] lg:h-[40px]'
 									/>

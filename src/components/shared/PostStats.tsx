@@ -77,8 +77,8 @@ const PostStats = ({ post, userId }: Props) => {
 				<img
 					src={`${
 						checkIsLiked(likes, userId)
-							? "/public/assets/icons/liked.svg"
-							: "/public/assets/icons/like.svg"
+							? "/assets/icons/liked.svg"
+							: "/assets/icons/like.svg"
 					}`}
 					alt='like'
 					width={20}
@@ -97,8 +97,8 @@ const PostStats = ({ post, userId }: Props) => {
 					<img
 						src={`${
 							isSaved
-								? "/public/assets/icons/saved.svg"
-								: "/public/assets/icons/save.svg"
+								? "/assets/icons/saved.svg"
+								: "/assets/icons/save.svg"
 						}`}
 						alt='like'
 						width={20}

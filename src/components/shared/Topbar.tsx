@@ -22,7 +22,7 @@ const Topbar = () => {
 					to={"/"}
 					className='flex gap-3 items-center'>
 					<img
-						src='/public/assets/images/logo.svg'
+						src='/assets/images/logo.svg'
 						alt='logo'
 						width={130}
 						height={325}
@@ -35,7 +35,7 @@ const Topbar = () => {
 						className='shad-button_ghost'
 						onClick={() => signOut()}>
 						<img
-							src='/public/assets/icons/logout.svg'
+							src='/assets/icons/logout.svg'
 							alt='logout'
 						/>
 					</Button>
@@ -45,7 +45,7 @@ const Topbar = () => {
 						<img
 							src={
 								user.imageUrl ||
-								"/public/assets/icons/profile-placeholder.svg"
+								"/assets/icons/profile-placeholder.svg"
 							}
 							alt='user Image'
 							className='h-8 w-8 rounded-full'

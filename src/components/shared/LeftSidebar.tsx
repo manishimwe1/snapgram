@@ -28,7 +28,7 @@ const LeftSidebar = () => {
 					to={"/"}
 					className='flex gap-3 items-center'>
 					<img
-						src='/public/assets/images/logo.svg'
+						src='/assets/images/logo.svg'
 						alt='logo'
 						width={140}
 						height={30}
@@ -40,7 +40,7 @@ const LeftSidebar = () => {
 					<img
 						src={
 							user.imageUrl ||
-							"/public/assets/images/profile.png"
+							"/assets/icons/profile-placeholder.svg"
 						}
 						alt='profile'
 						className='h-10 w-10 rounded-full'
@@ -87,7 +87,7 @@ const LeftSidebar = () => {
 				className='shad-button_ghost'
 				onClick={() => signOut()}>
 				<img
-					src='/public/assets/icons/logout.svg'
+					src='/assets/icons/logout.svg'
 					alt='logout'
 				/>
 				<p className='small-medium lg:base-medium'>

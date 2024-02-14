@@ -55,7 +55,7 @@ const Explore = () => {
 				</h2>
 				<div className='flex gap-1 px-4 w-full rounded-lg bg-dark-4'>
 					<img
-						src='/public/assets/icons/search.svg'
+						src='/assets/icons/search.svg'
 						alt='search'
 						width={24}
 						height={24}
@@ -81,7 +81,7 @@ const Explore = () => {
 						All
 					</p>
 					<img
-						src='/public/assets/icons/filter.svg'
+						src='/assets/icons/filter.svg'
 						alt='filter'
 						width={20}
 						height={20}
