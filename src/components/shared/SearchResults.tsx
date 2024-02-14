@@ -1,10 +1,10 @@
-import { Models } from "appwrite";
-import Loader from "./Loader";
+import { PostResponse } from "@/types";
 import GridPostList from "./GridPostList";
+import Loader from "./Loader";
 
 type searchProps = {
 	isSearchFeching: boolean;
-	searchedPosts: Models.Document[];
+	searchedPosts: PostResponse;
 };
 
 const SearchResults = ({
@@ -12,6 +12,7 @@ const SearchResults = ({
 	searchedPosts,
 }: searchProps) => {
 	if (isSearchFeching) return <Loader />;
+	console.log(searchedPosts);
 
 	if (
 		searchedPosts &&

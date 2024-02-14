@@ -190,6 +190,7 @@ export const useDeletePost = () => {
 };
 
 export const useGetPosts = () => {
+	//@ts-expect-error
 	return useInfiniteQuery({
 		queryKey: [QUERY_KEYS.GET_INFINITE_POSTS],
 		queryFn: getInfinitePosts as any,

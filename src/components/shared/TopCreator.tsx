@@ -1,5 +1,3 @@
-import React from "react";
-
 const TopCreator = () => {
 	return (
 		<div className='hidden lg:block w-[250px] mt-10'>

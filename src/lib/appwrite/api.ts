@@ -1,4 +1,9 @@
-import { INewPost, INewUser, IUpdatePost } from "@/types";
+import {
+	INewPost,
+	INewUser,
+	IUpdatePost,
+	PostResponse,
+} from "@/types";
 import {
 	account,
 	appwriteConfig,
@@ -402,11 +407,12 @@ export async function getInfinitePosts({
 }
 export async function searchPosts(searchTerm: string) {
 	try {
-		const posts = await databases.listDocuments(
-			appwriteConfig.databaseId,
-			appwriteConfig.postCollectionId,
-			[Query.search("caption", searchTerm)],
-		);
+		const posts: PostResponse =
+			await databases.listDocuments(
+				appwriteConfig.databaseId,
+				appwriteConfig.postCollectionId,
+				[Query.search("caption", searchTerm)],
+			);
 		if (!posts) throw Error;
 		return posts;
 	} catch (error) {

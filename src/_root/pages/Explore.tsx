@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 const Explore = () => {
-	const { ref, inView, entry } = useInView();
+	const { ref, inView } = useInView();
 	const [searchValue, setSearchValue] = useState("");
 
 	const {
@@ -39,12 +39,14 @@ const Explore = () => {
 	}
 	console.log(posts);
 
-	const shouldShowSearchResults = searchValue !== "";
+	const shouldShowSearchResults =
+		searchValue !== "" || !isSearchFeching;
 	const shouldShowPosts =
 		!shouldShowSearchResults &&
 		posts?.pages.every(
 			(item) => item.documents.length === 0,
 		);
+
 	return (
 		<div className='explore-container'>
 			<div className='explore-inner_container'>
@@ -87,7 +89,8 @@ const Explore = () => {
 				</div>
 			</div>
 			<div className='flex flex-wrap gap-9 w-full max-w-5xl'>
-				{shouldShowSearchResults ? (
+				{shouldShowSearchResults &&
+				searchedPosts ? (
 					<SearchResults
 						isSearchFeching={isSearchFeching}
 						searchedPosts={searchedPosts}
