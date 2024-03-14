@@ -13,7 +13,7 @@ const TopCreator = () => {
 		);
 	}
 	return (
-		<div className='hidden lg:block w-[250px] mt-10 overscroll-y-auto custom-scrollbar'>
+		<div className='hidden lg:block w-[250px] mt-10 h-screen  overflow-y-scroll custom-scrollbar'>
 			<h2 className='h3-bold md:h2-bold text-center w-full'>
 				Top Creator
 			</h2>

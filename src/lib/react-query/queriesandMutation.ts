@@ -177,6 +177,8 @@ export const useUpdatePost = () => {
 	});
 };
 export const useDeletePost = () => {
+	console.log("here");
+
 	const queryClient = useQueryClient();
 	return useMutation({
 		mutationFn: ({
